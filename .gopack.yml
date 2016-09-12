@@ -1,0 +1,16 @@
+author: Kirill Artyushenko
+description: 'Hello http server'
+os: darwin linux windows
+includes:
+  - README.md
+  - LICENSE
+  - conf
+  - templates
+  - public
+  - static
+  - views
+excludes:
+  - \.git
+script:
+  - go get -v
+  - go build
